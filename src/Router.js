@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Nav from './components/Nav';
+import Nav from './components/Nav/Nav';
 
 // 서혜선의 컴포넌트
 import LoginHS from './pages/hyeseonSeo/Login/Login';
