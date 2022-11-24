@@ -14,6 +14,7 @@ const Nav = () => {
         </div>
         <h1 className="logoTitle">Westagram</h1>
       </div>
+      q
       <input className="navInput" type="text" placeholder="검색" />
       <div className="navIcons">
         <img
