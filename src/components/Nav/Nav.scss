@@ -1,0 +1,45 @@
+@import '../../styles/mixin.scss';
+
+.nav {
+  margin: 0 auto;
+  width: 80%;
+  height: 70px;
+  @include navDisplay;
+}
+
+.navBox {
+  @include navDisplay;
+}
+
+.logoBox {
+  padding-right: 20px;
+}
+
+.logoTitle {
+  font-family: 'Lobster', cursive;
+  border-left: 3px solid black;
+  padding-left: 20px;
+}
+
+.navIcons {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navIcons img {
+  @include navImageSmall;
+}
+
+.logoImage {
+  @include navImageSmall;
+}
+
+.logoTitle {
+  font-size: 22px;
+}
+
+.navInput {
+  text-align: center;
+  padding: 3px 5px;
+}

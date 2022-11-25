@@ -1,0 +1,10 @@
+@mixin navImageSmall() {
+  width: 25px;
+  height: 25px;
+}
+
+@mixin navDisplay() {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
