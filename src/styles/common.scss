@@ -1,9 +1,13 @@
-@import 'https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;500;700&family=Lobster&display=swap';
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;500;700&family=Lobster&display=swap');
 
 * {
   font-family: 'Gothic A1', sans-serif;
   font-size: 14px;
   box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
 }
 
 button {

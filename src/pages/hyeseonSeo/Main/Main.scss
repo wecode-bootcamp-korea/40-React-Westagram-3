@@ -1,0 +1,276 @@
+@import '../../../styles/mixin.scss';
+@import '../../../styles/variable.scss';
+
+.wrapperMain {
+  @include flex;
+  flex-direction: column;
+}
+
+.wrapperNav {
+  display: none;
+  height: 70px;
+  line-height: 70px;
+  border-bottom: $border;
+
+  .innerNav {
+    @include alignFit;
+    @include align;
+    width: 60%;
+    margin: 0 auto;
+
+    .logoBox {
+      @include flex;
+      @include align;
+    }
+
+    .westagramTitle,
+    .logoDivSlash {
+      margin-left: 30px;
+      font-size: 22px;
+    }
+
+    .westagramLogo,
+    .iconBox img,
+    .wrapperState img {
+      @include imageSizeSmall;
+    }
+
+    .search {
+      width: 200px;
+      padding: 5px 5px;
+      background-color: $backgroundColor;
+      border: $border;
+      font-size: 12px;
+      text-align: center;
+    }
+
+    .iconBox {
+      @include flex;
+      width: 200px;
+      justify-content: space-around;
+    }
+  }
+}
+
+.wrapperFeeds {
+  @include alignFit;
+  background-color: $backgroundColor;
+}
+
+.feeds {
+  @include alignFit;
+  width: 55%;
+  margin: 40px auto;
+  padding: 0px 30px;
+}
+
+.feedsLeft {
+  width: 65%;
+  margin-right: 20px;
+  background-color: white;
+  border: $border;
+}
+
+.profileBox {
+  @include alignFit;
+  @include align;
+  padding: 15px;
+
+  .wrapperProfile {
+    @include flex;
+    width: 100%;
+  }
+
+  .profileImage {
+    @include imageSizeBig;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+
+  ul li:nth-child(1) {
+    @include profileFontStyle;
+  }
+
+  ul li:nth-child(2) {
+    @include profileFontStyle_location;
+  }
+
+  .more {
+    @include imageSizeSmall;
+  }
+}
+
+.contents {
+  height: 500px;
+  background: url(../../../assets/hyeseonSeo/Main/camping1.jpg) no-repeat 50%;
+  background-size: cover;
+}
+
+.stateBox {
+  padding: 10px 15px 0px;
+}
+
+.wrapperState {
+  @include alignFit;
+  padding: 15px 0px;
+
+  .bookmark {
+    @include imageSizeSmall;
+  }
+  .stateIcons {
+    @include alignFit;
+    width: 100px;
+  }
+
+  .stateIcons img {
+    @include imageSizeSmall;
+  }
+}
+
+.likeMsg {
+  @include flex;
+  @include align;
+  justify-content: flex-start;
+}
+
+.profileImageSizeSmall {
+  @include imageSizeSmall;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.commentWrite {
+  @include alignFit;
+  padding: 10px 0px;
+
+  b:nth-child(1) {
+    width: 90%;
+    padding: 10px 0px;
+    line-height: 24px;
+  }
+
+  img {
+    @include imageSizeSmall;
+  }
+}
+
+.commentsSample {
+  padding: 10px 15px;
+
+  .createComments {
+    @include alignFit;
+    width: 100%;
+
+    ul b {
+      margin-right: 10px;
+    }
+
+    .likeBtn {
+      width: 12px;
+      height: 12px;
+      margin-right: 10px;
+    }
+  }
+}
+
+.wrapperCommentsBox {
+  @include alignFit;
+  border-top: $border;
+
+  .commentsInput {
+    width: 90%;
+    padding: 15px 15px;
+    border-style: none;
+    font-size: 12px;
+  }
+
+  .commentsBtn {
+    width: 10%;
+    font-size: 12px;
+    border-style: none;
+    background-color: transparent;
+    color: #666;
+
+    &:hover {
+      color: $btnColor;
+    }
+  }
+}
+
+.mainRight {
+  width: 300px;
+}
+
+.profileImageRight {
+  @include imageSizeBig;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.profileBox {
+  @include alignFit;
+  @include align;
+  justify-content: flex-start;
+  padding: 15px;
+
+  li:nth-child(1) {
+    @include profileFontStyle;
+  }
+
+  li:nth-child(2) {
+    @include profileFontStyle_location;
+  }
+}
+
+.rightBoxRecommend {
+  @include flex;
+  margin-top: 15px;
+  justify-content: flex-start;
+}
+
+.story,
+.recommend {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: white;
+  border: $border;
+  height: 240px;
+  overflow: scroll;
+
+  .rightHeader {
+    @include alignFit;
+  }
+
+  .rightBox {
+    @include flex;
+    margin-top: 15px;
+    justify-content: flex-start;
+
+    .profileImageSizeMedium {
+      @include imageSizeMedium;
+      margin-right: 10px;
+      border-radius: 50%;
+    }
+
+    li:nth-child(1) {
+      @include alignFit;
+    }
+
+    li:nth-child(2) {
+      color: #ccc;
+    }
+  }
+}
+
+.follow {
+  color: $btnColor;
+  justify-content: flex-end;
+}
+
+.short {
+  width: 140px;
+  color: #ccc;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

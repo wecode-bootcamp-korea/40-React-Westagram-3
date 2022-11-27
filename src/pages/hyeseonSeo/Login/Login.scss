@@ -1,1 +1,58 @@
+@import '../../../styles/mixin.scss';
+@import '../../../styles/variable.scss';
 
+.Login {
+  @include flexColumn(column);
+  @include align;
+  margin-top: 100px;
+  justify-content: center;
+}
+
+.loginBox {
+  padding: 50px;
+  border: $border;
+  text-align: center;
+
+  h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 45px;
+  }
+
+  .loginForm {
+    @include flexColumn(column);
+    padding-top: 50px;
+
+    .loginId,
+    .loginPw,
+    .loginBtn,
+    .loginBtnActive {
+      @include loginSet();
+    }
+
+    .loginId,
+    .loginPw {
+      border: $border;
+      border-radius: $radius;
+    }
+
+    .alertComment {
+      visibility: hidden;
+    }
+
+    .loginBtn {
+      opacity: 0.3;
+      @include btnStyle;
+    }
+
+    .loginBtnActive {
+      opacity: 1;
+      @include btnStyle;
+    }
+
+    .forgetLink {
+      padding: 30px 0;
+      color: navy;
+      cursor: pointer;
+    }
+  }
+}
