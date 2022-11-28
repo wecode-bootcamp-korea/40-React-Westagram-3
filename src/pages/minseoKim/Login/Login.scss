@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.login {
+  background-color: white;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.loginForm {
+  background-color: white;
+  width: 350px;
+  height: 380px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 10rem;
+  margin-bottom: 0.6rem;
+}
+
+.logo_box {
+  width: auto;
+  height: auto;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  font-size: 30px;
+  color: black;
+  font-family: 'Lobster', cursive;
+}
+
+.idForm {
+  margin-bottom: 0.5rem;
+}
+
+.passForm {
+  margin-bottom: 0.5rem;
+}
+
+input {
+  display: block;
+  width: 250px;
+  height: 40px;
+  margin: 0 auto;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 3px;
+  text-indent: 5px;
+  outline-color: gray;
+}
+
+.loginBtn {
+  display: block;
+  width: 250px;
+  height: 30px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 3px;
+  background-color: skyblue;
+  font-style: bold;
+  font-size: 20px;
+}
+
+.activeLoginBtn {
+  display: block;
+  width: 250px;
+  height: 30px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(39, 39, 255);
+  font-style: bold;
+  font-size: 20px;
+}
+
+.findPw {
+  margin-top: 2rem;
+  font-size: 10px;
+  text-align: center;
+  color: rgb(39, 39, 255);
+}
