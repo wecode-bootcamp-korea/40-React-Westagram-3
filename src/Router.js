@@ -16,7 +16,7 @@ import MainOG from './pages/ohgyuKwon/Main/Main';
 
 // 문승훈의 컴포넌트
 import LoginSH from './pages/seunghoonMoon/Login/Login';
-import MainSH from './pages/seunghoonMoon/Main/Main';
+import MainSH from './pages/seunghoonMoon/Main/Main-sh';
 
 const Router = () => {
   return (
