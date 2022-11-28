@@ -7,18 +7,18 @@ function CommentActive(props) {
   const [commentList, setCommentList] = useState([]);
   // const [commentListLi, setcommetListLi] = useState(commentList);
 
-  const [commentLike, setcommentLike] = useState(0);
+  // const [commentLike, setcommentLike] = useState(0);
 
-  const commentDelete = e => {
-    const commentEle = e.target.parentElement;
-    commentEle.remove();
-  };
+  // const commentDelete = e => {
+  //   const commentEle = e.target.parentElement;
+  //   commentEle.remove();
+  // };
 
-  const commentLikeCount = (e, props) => {
-    e.target.checked
-      ? setcommentLike(commentLike + 1)
-      : setcommentLike(commentLike - 1);
-  };
+  // const commentLikeCount = (e, props) => {
+  //   e.target.checked
+  //     ? setcommentLike(commentLike + 1)
+  //     : setcommentLike(commentLike - 1);
+  // };
 
   const commentShow = commentList.map((e, i) => {
     // <CommentEle key={i} value={e}></CommentEle>;
@@ -26,10 +26,9 @@ function CommentActive(props) {
       <CommentEle
         key={i}
         commentList={e}
-        likeResult={commentLike}
-        likeFunc={commentLikeCount}
-        deleteFunc={commentDelete}
-      ></CommentEle>
+        // likeFunc={commentLikeCount}
+        // deleteFunc={commentDelete}
+      />
       // <li key={i}>
       //   {/* 로그인 사용자 명 */}
       //   {e}
@@ -54,12 +53,13 @@ function CommentActive(props) {
     setCommentList(commentList.concat(comment));
     setComment('');
   };
-  console.log(commentList);
+
   return (
-    <div id="commentSection">
+    <div id="commentSection" style={props.style}>
       <ul className="commentList">{commentShow}</ul>
 
-      <span id="commentUserInfo" value="user1">
+      <span id="commentUserInfo">
+        user1
         {/* 서버에서 가져온 로그인 유저 이름 */}
       </span>
       <input

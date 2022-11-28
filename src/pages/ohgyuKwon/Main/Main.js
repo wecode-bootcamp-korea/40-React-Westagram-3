@@ -7,10 +7,10 @@ import Nav from './MainNav.js';
 function Main() {
   return (
     <>
-      {/* <Nav></Nav> */}
+      {/* <Nav /> */}
       <div className="main">
-        <Feed></Feed>
-        <Aside></Aside>
+        <Feed />
+        <Aside />
       </div>
     </>
   );

@@ -1,5 +1,6 @@
 body {
-  margin: 0;
+  height: 750px;
+  background-color: #fafafa;
 }
 
 .navBar {
@@ -10,180 +11,179 @@ body {
   height: 90px;
   margin: auto;
   background-color: bisque;
-}
+  #navSearch {
+    padding: auto;
+    width: 300px;
+    height: 40px;
+  }
+  #searchResult {
+    position: absolute;
+    width: 300px;
+    background-color: white;
+  }
+  #popupSection {
+    position: absolute;
+    width: 200px;
+    background-color: azure;
+    display: none;
+  }
 
-#navSearch {
-  padding: auto;
-  width: 300px;
-  height: 40px;
-}
-
-#searchResult {
-  position: absolute;
-  width: 300px;
-  background-color: white;
-}
-
-#popupSection {
-  position: absolute;
-  width: 200px;
-  background-color: azure;
-  display: none;
-}
-
-#popupSection.appear {
-  position: absolute;
-  width: 200px;
-  background-color: azure;
-  display: block;
+  #popupSection.appear {
+    position: absolute;
+    width: 200px;
+    background-color: azure;
+    display: block;
+  }
 }
 
 .main {
-  width: 1400px;
-  height: 1100px;
+  width: 900px;
   margin: auto;
   display: flex;
-  background-color: blueviolet;
+  background-color: #fafafa;
+  .feedSection {
+    width: 600px;
+    height: 60%;
+    margin: auto;
+    background-color: black;
+    overflow: scroll;
+    .feed {
+      width: 90%;
+      height: auto;
+      background-color: gray;
+      margin: 20px auto;
+      .feedUserInfo {
+        display: flex;
+        height: 50px;
+        background-color: yellow;
+        padding: 10px 20px;
+        .feedHeader {
+          display: flex;
+          align-items: center;
+        }
+      }
+      .feedImg {
+        width: 100%;
+        height: 350px;
+        margin: auto;
+        background-color: brown;
+      }
+      .feedNav {
+        width: 100%;
+        height: 40px;
+        background-color: aquamarine;
+      }
+      .likeCheck {
+        background-image: url();
+      }
+      .likeCountSection {
+        font-size: 15px;
+        margin: 10px 10px;
+        background-color: beige;
+      }
+      .feedContents {
+        height: 60px;
+        padding: 10px;
+        background-color: beige;
+      }
+      .countTime {
+        background-color: beige;
+        margin: 5px 10px;
+        font-size: 12px;
+      }
+      #commentSection {
+        height: auto;
+        padding: 10px;
+        background-color: azure;
+        .commentSection ul {
+          margin: 0 0 10px 0;
+        }
+        #commentUserInfo {
+          font-size: 15px;
+          margin: 5px;
+        }
+
+        #commentInput {
+          width: 70%;
+          height: 30px;
+          border-color: black;
+        }
+        #commentBtn {
+          width: 50px;
+          height: 30px;
+          margin: 10px;
+        }
+      }
+    }
+  }
+  .feedSection::-webkit-scrollbar {
+    display: none;
+  }
+  .userSection {
+    width: 250px;
+
+    background-color: black;
+    margin: 20px;
+    .userInfo {
+      width: 80%;
+      height: 60px;
+      background-color: aquamarine;
+      margin: auto;
+    }
+  }
+  .storyHeader {
+    width: 250px;
+    margin-left: 20px;
+    height: 40px;
+    background-color: brown;
+  }
+
+  .mainRightTop {
+    width: 250px;
+    height: 20%;
+    background-color: black;
+    margin: 20px;
+    margin-top: 0px;
+    overflow: scroll;
+
+    .storyList {
+      width: 200px;
+      height: 35px;
+      background-color: aqua;
+      padding-left: 10px;
+      margin: 10px auto;
+    }
+  }
+  .mainRightTop::-webkit-scrollbar {
+    display: none;
+  }
+  .recommendHeader {
+    width: 250px;
+    height: 40px;
+    background-color: brown;
+    margin-left: 20px;
+  }
+  .mainRightBottom {
+    width: 250px;
+    height: 20%;
+    margin: 20px;
+    margin-top: 0px;
+    background-color: black;
+    overflow: scroll;
+
+    .recommendList {
+      width: 200px;
+      height: 35px;
+      background-color: aqua;
+      margin: 10px auto;
+    }
+  }
+  .mainRightBottom::-webkit-scrollbar {
+    display: none;
+  }
 }
 
-.feedSection {
-  width: 900px;
-  height: 95%;
-  margin: auto;
-  background-color: black;
-  overflow: scroll;
-}
-
-.feedSection::-webkit-scrollbar {
-  display: none;
-}
-
-.feed {
-  width: 90%;
-  height: auto;
-  background-color: gray;
-  margin: 20px auto;
-}
-
-.feedUserInfo {
-  height: 60px;
-  background-color: yellow;
-  padding: 10px 20px;
-}
-.feedImg {
-  width: 100%;
-  height: 500px;
-  margin: auto;
-  background-color: brown;
-}
-
-.feedNav {
-  width: 100%;
-  height: 60px;
-  background-color: aquamarine;
-}
-
-.likeCountSection {
-  font-size: 25px;
-  margin: 10px 10px;
-  background-color: beige;
-}
-
-.feedContents {
-  height: 80px;
-  padding: 10px;
-  background-color: beige;
-}
-
-.countTime {
-  background-color: beige;
-  margin: 5px 10px;
-}
-
-#commentSection {
-  height: auto;
-  padding: 10px;
-  background-color: azure;
-}
-
-.commentSection ul {
-  margin: 0 0 10px 0;
-}
-
-.userSection {
-  width: 400px;
-  height: 10%;
-  background-color: black;
-  margin: 20px;
-}
-
-.userInfo {
-  width: 80%;
-  height: 80px;
-  background-color: aquamarine;
-  margin: auto;
-}
-
-#commentUserInfo {
-  font-size: 25px;
-}
-
-#commentInput {
-  width: 70%;
-  height: 30px;
-  border-color: black;
-}
-#commentBtn {
-  width: 10%;
-  height: 40px;
-}
-
-.mainRightTop {
-  width: 400px;
-  height: 30%;
-  background-color: black;
-  margin: 20px;
-  overflow: scroll;
-}
-
-.mainRightTop::-webkit-scrollbar {
-  display: none;
-}
-.storyHeader {
-  width: 100%;
-  height: 60px;
-  background-color: brown;
-}
-
-.storyList {
-  width: 250px;
-  height: 50px;
-  background-color: aqua;
-  padding-left: 10px;
-  margin: 10px auto;
-}
-.mainRightBottom {
-  width: 400px;
-  height: 30%;
-  margin: 20px;
-  background-color: black;
-  overflow: scroll;
-}
-.mainRightBottom::-webkit-scrollbar {
-  display: none;
-}
-.recommendHeader {
-  width: 100%;
-  height: 60px;
-  background-color: brown;
-}
-.recommendList {
-  width: 80%;
-  height: 50px;
-  background-color: aqua;
-  margin: 10px auto;
-}
-@media (max-width: 1500px) {
+@media (max-width: 980px) {
   .navBar {
     width: 100%;
   }
@@ -192,20 +192,20 @@ body {
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 600px) {
   .main {
     width: 100%;
     margin: auto;
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 500px) {
   .feedSection {
     width: 95%;
   }
 }
 
-@media (max-width: 530px) {
+@media (max-width: 350px) {
   #commentUserInfo {
     display: none;
   }

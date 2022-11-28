@@ -24,7 +24,6 @@ function FormInput(props) {
       ...inputValue,
       [name]: value,
     });
-    console.log(inputValue);
   };
 
   return (
