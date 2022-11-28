@@ -103,10 +103,6 @@ const Main = () => {
                     &nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur eum
                     adipisicing elit. Placeat.{' '}
                   </span>
-                  <img
-                    alt="like"
-                    src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
-                  />
                 </div>
               </div>
             </article>
@@ -114,13 +110,8 @@ const Main = () => {
               <li>
                 <div className="createComments">
                   <ul>
-                    <b style={{ fontWeight: 900 }}>wecode_hyeseon</b>
-                    <span>Placeat, eligendi neque. </span>
-                    {commentsList.map((li, i) => {
-                      return (
-                        <Comments user={nickName} list={li} key={i} index={i} />
-                      );
-                    })}
+                    <strong style={{ fontWeight: 700 }}>wecode_hyeseon</strong>
+                    <span>Placeat eligendi neque </span>
                   </ul>
                   <ul className="commentsSampleBtn">
                     <img
@@ -132,6 +123,9 @@ const Main = () => {
                   </ul>
                 </div>
               </li>
+              {commentsList.map((li, i) => {
+                return <Comments user={nickName} list={li} key={i} />;
+              })}
             </ul>
 
             <div className="wrapperCommentsBox">

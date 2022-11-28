@@ -162,12 +162,12 @@
 
 .commentsSample {
   padding: 10px 15px;
+  width: 100%;
 
   .createComments {
     @include alignFit;
-    width: 100%;
 
-    ul b {
+    ul strong {
       margin-right: 10px;
     }
 
@@ -245,6 +245,14 @@
 
   .rightHeader {
     @include alignFit;
+
+    span {
+      font-size: 14px;
+    }
+
+    span:nth-child(2) {
+      font-weight: 700;
+    }
   }
 
   .rightBox {
@@ -258,8 +266,14 @@
       border-radius: 50%;
     }
 
+    li {
+      padding-top: 5px;
+      font-size: 14px;
+    }
+
     li:nth-child(1) {
       @include alignFit;
+      width: 100%;
     }
 
     li:nth-child(2) {
@@ -271,6 +285,7 @@
 .follow {
   color: $btnColor;
   justify-content: flex-end;
+  font-weight: 700;
 }
 
 .short {

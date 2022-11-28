@@ -1,11 +1,12 @@
 import React from 'react';
+import './Main.scss';
 
 const Comments = props => {
   return (
     <li style={{ paddingTop: '10px' }}>
       <div className="createComments">
         <ul>
-          <b style={{ fontWeight: 'bold' }}>{props.user}</b>
+          <strong style={{ fontWeight: 'bold' }}>{props.user}</strong>
           <span>{props.list}</span>
         </ul>
         <ul className="commentsSampleBtn">
