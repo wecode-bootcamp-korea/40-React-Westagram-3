@@ -131,6 +131,10 @@
   @include flex;
   @include align;
   justify-content: flex-start;
+
+  strong {
+    font-weight: 700;
+  }
 }
 
 .profileImageSizeSmall {
@@ -143,14 +147,16 @@
   @include alignFit;
   padding: 10px 0px;
 
-  b:nth-child(1) {
-    width: 90%;
-    padding: 10px 0px;
-    line-height: 24px;
+  span {
+    line-height: 20px;
+    strong {
+      font-weight: 700;
+    }
   }
 
   img {
-    @include imageSizeSmall;
+    width: 20px;
+    height: 20px;
   }
 }
 

@@ -1,8 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Main.scss';
+import Comments from './Comments';
 import { Link } from 'react-router-dom';
 
 const Main = () => {
+  const nickName = 'seonday';
+
+  const [comment, setComment] = useState('');
+  const [commentsList, setCommentsList] = useState([]);
+
+  const checkComment = e => setComment(e.target.value);
+
+  const uploadComment = () => {
+    const commentArr = [...commentsList];
+    commentArr.push(comment);
+    setCommentsList(commentArr);
+    setComment('');
+  };
+
   return (
     <div className="Main">
       <header className="wrapperNav">
@@ -78,15 +93,15 @@ const Main = () => {
                     src="./images/hyeseonSeo/camping2.jpg"
                   />
                   <p>
-                    <b>wecode_hyeseon</b>님 외 <b>35명</b>이 좋아합니다
+                    <strong>wecode_hyeseon</strong>님 외 <strong>35명</strong>이
+                    좋아합니다
                   </p>
                 </div>
                 <div className="commentWrite">
                   <span>
-                    <b>wecode_hyeseon</b>
-                    &nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Placeat, eligendi neque eum beatae modi
-                    amet.{' '}
+                    <strong>wecode_hyeseon</strong>
+                    &nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur eum
+                    adipisicing elit. Placeat.{' '}
                   </span>
                   <img
                     alt="like"
@@ -95,14 +110,43 @@ const Main = () => {
                 </div>
               </div>
             </article>
-            <ul className="commentsSample" />
+            <ul className="commentsSample">
+              <li>
+                <div className="createComments">
+                  <ul>
+                    <b style={{ fontWeight: 900 }}>wecode_hyeseon</b>
+                    <span>Placeat, eligendi neque. </span>
+                    {commentsList.map((li, i) => {
+                      return (
+                        <Comments user={nickName} list={li} key={i} index={i} />
+                      );
+                    })}
+                  </ul>
+                  <ul className="commentsSampleBtn">
+                    <img
+                      className="likeBtn"
+                      alt="like"
+                      src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
+                    />
+                    <span className="deleteBtn">x</span>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+
             <div className="wrapperCommentsBox">
               <input
                 className="commentsInput"
                 type="text"
                 placeholder="댓글 달기..."
+                value={comment}
+                onChange={checkComment}
               />
-              <button className="commentsBtn" type="button">
+              <button
+                className="commentsBtn"
+                type="button"
+                onClick={uploadComment}
+              >
                 게시
               </button>
             </div>

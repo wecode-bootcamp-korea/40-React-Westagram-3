@@ -1,12 +1,12 @@
 import React from 'react';
 
-const Comment = () => {
+const Comments = props => {
   return (
-    <li>
+    <li style={{ paddingTop: '10px' }}>
       <div className="createComments">
         <ul>
-          <b style={{ fontWeight: 'bold' }}>wecode_hyeseon</b>
-          <span>comments</span>
+          <b style={{ fontWeight: 'bold' }}>{props.user}</b>
+          <span>{props.list}</span>
         </ul>
         <ul className="commentsSampleBtn">
           <img
@@ -21,4 +21,4 @@ const Comment = () => {
   );
 };
 
-export default Comment;
+export default Comments;
