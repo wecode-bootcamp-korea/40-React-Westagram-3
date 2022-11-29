@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
-import './Main.scss';
-import Comments from './Comments';
 import { Link } from 'react-router-dom';
+import Comments from './Comments';
+import './Main.scss';
 
 const Main = () => {
-  const nickName = 'seonday';
-
   const [comment, setComment] = useState('');
   const [commentsList, setCommentsList] = useState([]);
 
@@ -100,8 +98,9 @@ const Main = () => {
                 <div className="commentWrite">
                   <span>
                     <strong>wecode_hyeseon</strong>
-                    &nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur eum
-                    adipisicing elit. Placeat.{' '}
+                    &nbsp;&nbsp; sunrise lucy droplet masquerade lucid you
+                    droplet charming masquerade haze flora blush flutter miracle
+                    melody iris{' '}
                   </span>
                 </div>
               </div>
@@ -110,7 +109,7 @@ const Main = () => {
               <li>
                 <div className="createComments">
                   <ul>
-                    <strong style={{ fontWeight: 700 }}>wecode_hyeseon</strong>
+                    <strong>wecode_hyeseon</strong>
                     <span>Placeat eligendi neque </span>
                   </ul>
                   <ul className="commentsSampleBtn">
@@ -124,7 +123,7 @@ const Main = () => {
                 </div>
               </li>
               {commentsList.map((li, i) => {
-                return <Comments user={nickName} list={li} key={i} />;
+                return <Comments user={NICKNAME} list={li} key={i} />;
               })}
             </ul>
 
@@ -159,7 +158,7 @@ const Main = () => {
             </div>
             <div className="story">
               <div className=" rightHeader">
-                <span style={{ color: '#ccc' }}>스토리</span>
+                <span>스토리</span>
                 <span>모두보기</span>
               </div>
               <div className="rightBox">
@@ -169,8 +168,8 @@ const Main = () => {
                   alt="profileImage"
                 />
                 <ul>
-                  <li>hhyeseonn</li>
-                  <li>1시간 전</li>
+                  <li>we___</li>
+                  <p>4시간 전</p>
                 </ul>
               </div>
               <div className="rightBox">
@@ -180,8 +179,8 @@ const Main = () => {
                   alt="profileImage"
                 />
                 <ul>
-                  <li>na._.jeong3</li>
-                  <li>2시간 전</li>
+                  <li>star_gram</li>
+                  <p>4시간 전</p>
                 </ul>
               </div>
               <div className="rightBox">
@@ -191,8 +190,8 @@ const Main = () => {
                   alt="profileImage"
                 />
                 <ul>
-                  <li>seo_jeongee1</li>
-                  <li>3시간 전</li>
+                  <li>pro._.ject</li>
+                  <p>4시간 전</p>
                 </ul>
               </div>
               <div className="rightBox">
@@ -202,8 +201,8 @@ const Main = () => {
                   alt="profileImage"
                 />
                 <ul>
-                  <li>min_93</li>
-                  <li>4시간 전</li>
+                  <li>we___</li>
+                  <p>4시간 전</p>
                 </ul>
               </div>
               <div className="rightBox">
@@ -213,8 +212,8 @@ const Main = () => {
                   alt="profileImage"
                 />
                 <ul>
-                  <li>seo_jeongee1</li>
-                  <li>3시간 전</li>
+                  <li>star_gram</li>
+                  <p>4시간 전</p>
                 </ul>
               </div>
               <div className="rightBox">
@@ -224,15 +223,15 @@ const Main = () => {
                   alt="profileImage"
                 />
                 <ul>
-                  <li>min_93</li>
-                  <li>4시간 전</li>
+                  <li>pro._.ject</li>
+                  <p>4시간 전</p>
                 </ul>
               </div>
             </div>
 
             <div className="recommend">
               <div className="rightHeader">
-                <span style={{ color: '#ccc' }}>회원님을 위한 추천</span>
+                <span>회원님을 위한 추천</span>
                 <span>모두보기</span>
               </div>
               <div className="rightBox">
@@ -243,10 +242,9 @@ const Main = () => {
                 />
                 <ul>
                   <li>
-                    hhyesseonn<b className="follow">팔로우</b>
+                    .zip___ <span>팔로우</span>
                   </li>
-
-                  <li className="short">wecode님 외 2명이 좋아합니다.</li>
+                  <p className="short">wecode님 외 2명이 좋아합니다.</p>
                 </ul>
               </div>
               <div className="rightBox">
@@ -257,25 +255,36 @@ const Main = () => {
                 />
                 <ul>
                   <li>
-                    na._.jeong3<b className="follow">팔로우</b>
+                    gagosip_da<span>팔로우</span>
                   </li>
-                  <li className="short">wecode님 외 2명이 좋아합니다.</li>
+                  <p className="short">wecode님 외 2명이 좋아합니다.</p>
                 </ul>
               </div>
               <div className="rightBox">
-                <img
-                  className="profileImageSizeMedium"
-                  src="./images/hyeseonSeo/camping5.jpg"
-                  alt="profileImage"
-                />
-                <ul>
-                  <li>
-                    seo_jeongee1<b className="follow">팔로우</b>
-                  </li>
-                  <li className="short">wecode님 외 2명이 좋아합니다.</li>
-                </ul>
+                <div>
+                  <img
+                    className="profileImageSizeMedium"
+                    src="./images/hyeseonSeo/camping5.jpg"
+                    alt="profileImage"
+                  />
+                  <ul>
+                    <li>
+                      _please__<span>팔로우</span>
+                    </li>
+                    <p className="short">wecode님 외 2명이 좋아합니다.</p>
+                  </ul>
+                </div>
               </div>
             </div>
+
+            <aside className="aside">
+              <p>
+                소개 &#183; 도움말 &#183; 홍보 &#183; 센터 &#183; API &#183;
+                채용 정보 &#183; 개인정보처리방침 &#183; 약관 &#183; 위치 &#183;
+                인기 계정 &#183; 해시태그 &#183; 언어
+              </p>
+              <p>ⓒ 2022 WESTAGRAM</p>
+            </aside>
           </article>
         </div>
       </section>
@@ -284,3 +293,5 @@ const Main = () => {
 };
 
 export default Main;
+
+const NICKNAME = 'seonday';

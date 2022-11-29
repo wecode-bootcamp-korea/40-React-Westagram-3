@@ -3,10 +3,10 @@ import './Main.scss';
 
 const Comments = props => {
   return (
-    <li style={{ paddingTop: '10px' }}>
+    <li className="pushComments">
       <div className="createComments">
         <ul>
-          <strong style={{ fontWeight: 'bold' }}>{props.user}</strong>
+          <strong>{props.user}</strong>
           <span>{props.list}</span>
         </ul>
         <ul className="commentsSampleBtn">
