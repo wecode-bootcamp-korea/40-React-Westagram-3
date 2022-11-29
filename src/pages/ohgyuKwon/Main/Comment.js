@@ -55,13 +55,10 @@ function CommentActive(props) {
   };
 
   return (
-    <div id="commentSection" style={props.style}>
+    <div className="commentSection" style={props.style}>
       <ul className="commentList">{commentShow}</ul>
 
-      <span id="commentUserInfo">
-        user1
-        {/* 서버에서 가져온 로그인 유저 이름 */}
-      </span>
+      <span id="commentUserInfo">{/* 서버에서 가져온 로그인 유저 이름 */}</span>
       <input
         id="commentInput"
         type="text"

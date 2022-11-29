@@ -22,18 +22,45 @@ function FeedSection() {
     <div className="feedSection">
       <article className="feed">
         <div className="feedUserInfo">
-          <div className="feedHeader">
+          <div className="feedHeaderEle">
             <img src="/images/ohgyukwon/boy1.png" alt="" width={'40px'} />
             <span>user1</span>
           </div>
+          <img
+            className="moreView"
+            src="/images/ohgyukwon/moreview.png"
+            alt=""
+          />
         </div>
-        <div className="feedImg" />
+        <div>
+          <img
+            className="feedImg"
+            src="/images/ohgyukwon/FeedbgImg.jpg"
+            alt=""
+          />
+        </div>
         <div className="feedNav">
-          <input type="checkbox" className="likeCheck" onClick={FeedLikcFunc} />
-          <input
-            type="checkbox"
-            className="commentOpen"
-            onClick={CommentBoxCtrl}
+          <div className="feedNavUtil">
+            <input
+              type="checkbox"
+              className="likeCheckIcon"
+              onClick={FeedLikcFunc}
+            />
+            <input
+              type="checkbox"
+              className="commentCheckIcon"
+              onClick={CommentBoxCtrl}
+            />
+            <img
+              className="shareIcon"
+              src="/images/ohgyukwon/shareIcon.png"
+              alt=""
+            />
+          </div>
+          <img
+            className="bookMarkIcon"
+            src="/images/ohgyukwon/bookmark.png"
+            alt=""
           />
         </div>
         <p className="likeCountSection">
@@ -41,7 +68,7 @@ function FeedSection() {
         </p>
         <div className="feedContents">안녕하세요</div>
         <p className="countTime">50분전</p>
-        <Comment commentHolder="댓글을 입력하세요" style={CommentBoxDisplay} />
+        <Comment commentHolder="댓글입력" style={CommentBoxDisplay} />
       </article>
     </div>
   );

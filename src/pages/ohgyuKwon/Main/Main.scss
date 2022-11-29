@@ -38,80 +38,145 @@ body {
 
 .main {
   width: 900px;
+  height: 100%;
   margin: auto;
   display: flex;
   background-color: #fafafa;
   .feedSection {
     width: 600px;
-    height: 60%;
     margin: auto;
-    background-color: black;
     overflow: scroll;
     .feed {
       width: 90%;
       height: auto;
-      background-color: gray;
+      border: 2px solid #f0f0f0;
+      background-color: white;
       margin: 20px auto;
       .feedUserInfo {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
         height: 50px;
-        background-color: yellow;
-        padding: 10px 20px;
-        .feedHeader {
+        border-bottom: 2px solid #f0f0f0;
+        padding: 10px 10px;
+        .feedHeaderEle {
           display: flex;
           align-items: center;
+        }
+        .moreView {
+          width: 20px;
+          height: 20px;
         }
       }
       .feedImg {
         width: 100%;
-        height: 350px;
-        margin: auto;
-        background-color: brown;
       }
       .feedNav {
+        border-top: 2px solid #f0f0f0;
+        border-bottom: 2px solid #f0f0f0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 20px;
         width: 100%;
         height: 40px;
-        background-color: aquamarine;
       }
-      .likeCheck {
-        background-image: url();
+      .feedNavUtil {
+        display: flex;
+        flex-direction: row;
+      }
+      .likeCheckIcon {
+        width: 25px;
+        height: 25px;
+        appearance: none;
+        background-image: url('../../../assets/ohkyukwon/emptyHeart.png');
+        background-size: cover;
+      }
+      .likeCheckIcon:checked {
+        // width: 25px;
+        // height: 25px;
+        // appearance: none;
+        background-image: url('../../../assets/ohkyukwon/fullHeart.png');
+      }
+      .commentCheckIcon {
+        width: 20px;
+        height: 20px;
+        margin: 5px;
+        appearance: none;
+        background-image: url('../../../assets/ohkyukwon/openComment.png');
+        background-size: cover;
+      }
+      .commentCheckIcon:checked {
+        background-image: url('../../../assets/ohkyukwon/closeComment.png');
+      }
+      .shareIcon {
+        width: 20px;
+        height: 20px;
+        margin: 5px;
+      }
+      .bookMarkIcon {
+        width: 18px;
+        height: 20px;
       }
       .likeCountSection {
         font-size: 15px;
         margin: 10px 10px;
-        background-color: beige;
       }
       .feedContents {
         height: 60px;
         padding: 10px;
-        background-color: beige;
       }
       .countTime {
-        background-color: beige;
         margin: 5px 10px;
         font-size: 12px;
       }
-      #commentSection {
-        height: auto;
+      .commentSection {
+        border-top: 2px solid #f0f0f0;
         padding: 10px;
-        background-color: azure;
-        .commentSection ul {
-          margin: 0 0 10px 0;
-        }
-        #commentUserInfo {
-          font-size: 15px;
-          margin: 5px;
+        height: auto;
+
+        .comment {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 12px;
+          .commentUtil {
+            display: flex;
+            align-items: center;
+            .CommentLikeIcon {
+              width: 20px;
+              height: 20px;
+              appearance: none;
+              background-image: url('../../../assets/ohkyukwon/emptyHeart.png');
+              background-size: cover;
+            }
+            .CommentLikeIcon:checked {
+              background-image: url('../../../assets/ohkyukwon/fullHeart.png');
+            }
+            .commentDeleteIcon {
+              width: 20px;
+              height: 20px;
+              border: none;
+              background-image: url('../../../assets/ohkyukwon/delelte.png');
+              background-color: white;
+              background-size: cover;
+            }
+          }
         }
 
         #commentInput {
-          width: 70%;
-          height: 30px;
-          border-color: black;
+          border: none;
+          width: 90%;
+          height: 35px;
+          background-color: transparent;
         }
         #commentBtn {
-          width: 50px;
+          width: 10%;
           height: 30px;
-          margin: 10px;
+          border: none;
+          background-color: transparent;
+          color: #5aa7f2;
         }
       }
     }
