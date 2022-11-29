@@ -1,6 +1,7 @@
 import React from 'react';
 import StoryUserInfo from './StoryUserInfo';
 import RecommendUser from './RecommendUser';
+import Footer from './Footer';
 import './Main.scss';
 
 function Mainright() {
@@ -22,6 +23,9 @@ function Mainright() {
         <div className="mainRightBottom">
           <RecommendUser />
         </div>
+      </div>
+      <div className="FooterSection">
+        <Footer />
       </div>
     </div>
   );

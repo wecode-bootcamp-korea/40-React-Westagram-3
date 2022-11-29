@@ -44,8 +44,10 @@ body {
   background-color: #fafafa;
   .feedSection {
     width: 600px;
+    height: 700px;
     margin: auto;
     overflow: scroll;
+    background-color: black;
     .feed {
       width: 90%;
       height: auto;
@@ -245,6 +247,18 @@ body {
   }
   .mainRightBottom::-webkit-scrollbar {
     display: none;
+  }
+
+  .FooterSection {
+    margin-left: 20px;
+    width: 250px;
+    background-color: #5aa7f2;
+    .FooterLi {
+      font-size: 12px;
+      color: rgb(150, 149, 149);
+      float: left;
+      margin: 1px;
+    }
   }
 }
 

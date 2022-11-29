@@ -18,7 +18,7 @@ function CommentElement(props) {
 
   return (
     <li className="comment">
-      {/* 로그인 사용자 명 */}
+      {/* 로그인 사용자 명 -  */}
       {commentList}
       {/* <button onClick={deleteBtn}>삭제</button> */}
       {/* span value값은 데이터 받아서 */}
