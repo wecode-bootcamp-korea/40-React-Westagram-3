@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import ASIDE_LIST from './AsideData';
 import Comments from './Comments';
 import './Main.scss';
 
@@ -278,13 +279,11 @@ const Main = () => {
             </div>
 
             <aside className="aside">
-              <p>
-                소개 &#183; 도움말 &#183; 홍보 &#183; 센터 &#183; API &#183;
-                채용 정보 &#183; 개인정보처리방침 &#183; 약관 &#183; 위치 &#183;
-                인기 계정 &#183; 해시태그 &#183; 언어
-              </p>
-              <p>ⓒ 2022 WESTAGRAM</p>
+              {ASIDE_LIST.map(menu => {
+                return <span key={menu.id}>{menu.asideMenu} &#183; </span>;
+              })}
             </aside>
+            <p className="copyRight">ⓒ 2022 WESTAGRAM</p>
           </article>
         </div>
       </section>

@@ -311,12 +311,12 @@
   }
 }
 
-.aside {
+.aside span,
+.copyRight {
   color: #ccc;
   font-size: 12px;
+}
 
-  p {
-    line-height: 17px;
-    margin-bottom: 10px;
-  }
+.copyRight {
+  margin-top: 10px;
 }
