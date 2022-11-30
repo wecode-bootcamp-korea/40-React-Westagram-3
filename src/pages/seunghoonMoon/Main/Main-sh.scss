@@ -24,7 +24,7 @@ body {
 
 .title {
   font-family: 'Lobster', cursive;
-  border-left: 2px solid black;
+  border-left: 2px solid #dcdcdc;
   margin-left: 5px;
   padding-left: 5px;
 }
@@ -67,18 +67,27 @@ body {
   display: flex;
   width: 1000px;
   height: 900px;
-  background-color: aqua;
+  // background-color: aqua;
   margin: auto;
 }
+// .main_comment {
+//   width: 500px;
+//   height: 100%;
+//   background-color: aquamarine;
+//   margin: auto;
+//   margin-bottom: 60px;
+// }
 .main_box {
+  display: flex;
+  justify-content: center;
   .main_profile {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 100px;
+    // margin: 0 100px;
     /* width: 700px; */
     height: 80px;
-    background-color: yellow;
+    // background-color: yellow;
     padding: 0 20px;
   }
   .main_text_profile {
@@ -100,103 +109,88 @@ body {
 
 /* section */
 .feed_section {
-  width: 700px;
   height: 100%;
-  background-color: brown;
+  // background-color: brown;
+  display: felx;
+  border: 1px solid black;
 }
-.feed_section {
-  .feed_picture {
-    width: 700px;
-    height: 600px;
-  }
-  .feed_picture img {
-    display: block;
-    width: 500px;
-    height: 100%;
-    margin: auto;
-  }
-  .feed_icons {
-    height: 30px;
-    background-color: antiquewhite;
 
+.feed_picture {
+  // width: 700px;
+  height: 600px;
+}
+.feed_picture img {
+  display: block;
+  width: 480px;
+  height: 100%;
+  // margin: auto;
+}
+.feed_icons {
+  height: 30px;
+  // background-color: antiquewhite;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+
+  // margin: 0 100px;
+}
+.feed_icon_heart img {
+  width: 30px;
+}
+// .feed_reply_profile{
+//   width: 10px;
+//   height: 10px;
+
+// }
+.bookmark {
+}
+.feed_reply {
+  // margin-left: 70px;
+  word-spacing: 10px;
+  .reply_summary {
+    margin-top: 10px;
+    // margin-left: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    margin: 0 100px;
-  }
-  .feed_icon_heart img {
-    width: 30px;
-  }
-  // .feed_reply_profile{
-  //   width: 10px;
-  //   height: 10px;
-
-  // }
-  .bookmark {
-  }
-  .feed_reply {
-    margin-left: 70px;
-    word-spacing: 10px;
-  }
-  .feed_reply_list {
-    list-style: none;
-  }
-
-  .feed_box {
-    height: 30px;
-    // background-color: chartreuse;
-    margin: auto;
+    border-bottom: 50px;
   }
 }
-// .feed_picture {
-//   width: 700px;
-//   height: 600px;
-// }
-// .feed_picture img {
-//   display: block;
-//   width: 500px;
-//   height: 100%;
-//   margin: auto;
-// }
-// .feed_icons{
+.feed_reply_list {
+  list-style: none;
 
-//   height: 30px;
-//   background-color: antiquewhite;
+  li {
+    margin-top: 15px;
+  }
+}
 
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
+.feed_box {
+  height: 30px;
 
-//   margin: 0 100px;
-
-// }
-// .feed_icon_heart img{
-//   width: 30px;
-
-// }
-// .bookmark{
-
-// }
-
-// .feed_box{
-
-//   height: 30px;
-//   background-color: chartreuse;
-//   margin: auto;
-
-// }
+  margin: auto;
+}
+.reply_comment {
+  width: 90%;
+  margin-top: 27%;
+  button {
+    width: 100%;
+  }
+}
 
 .right_box {
   width: 300px;
   height: 100%;
+  margin-right: 200px;
 }
 .right_box {
   .user_info_section {
     width: 250px;
     height: 80px;
-    background-color: blueviolet;
+
     margin: auto;
+    border: 1px solid #dcdcdc;
   }
   .user_info_section img {
     width: 40px;
@@ -207,8 +201,9 @@ body {
   .story_section {
     width: 250px;
     height: 230px;
-    background-color: aliceblue;
+
     margin: auto;
+    border: 1px solid #dcdcdc;
   }
   .story_section img {
     width: 40px;
@@ -217,8 +212,9 @@ body {
   .recommand_section {
     width: 250px;
     height: 200px;
-    background-color: burlywood;
+
     margin: auto;
+    border: 1px solid #dcdcdc;
   }
 
   .right_box > div {

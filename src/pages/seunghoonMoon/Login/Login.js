@@ -22,7 +22,7 @@ function Login() {
   // const [id, setId] = useState('');
   // const [pw, setPw] = useState('');
   const navi = useNavigate();
-  const handleClick = event => {
+  const handleClick = () => {
     alert('hi');
     navi('/main-sh');
   };
