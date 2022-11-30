@@ -13,6 +13,7 @@ function Main() {
         key={feedItem.id}
         userid={feedItem.username}
         userprofile={feedItem.userprofile}
+        feedimg={feedItem.feedImg}
       />
     );
   });

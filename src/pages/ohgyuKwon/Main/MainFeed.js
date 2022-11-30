@@ -21,7 +21,7 @@ function FeedSection(props) {
 
   return (
     <article className="feed">
-      <div className="feedUserInfo">
+      <section className="feedUserInfo">
         <div className="feedHeaderEle">
           {/* userProfile mockData */}
           <img src={props.userprofile} alt="" width="40px" />
@@ -29,12 +29,12 @@ function FeedSection(props) {
           <span>{props.userid}</span>
         </div>
         <img className="moreView" src="/images/ohgyukwon/moreview.png" alt="" />
-      </div>
-      <div>
+      </section>
+      <section className="feedImgSection">
         {/* feedImg mockData */}
-        <img className="feedImg" src="/images/ohgyukwon/FeedbgImg.jpg" alt="" />
-      </div>
-      <div className="feedNav">
+        <img className="feedImg" src={props.feedimg} alt="" />
+      </section>
+      <section className="feedNav">
         <div className="feedNavUtil">
           <input
             type="checkbox"
@@ -57,13 +57,13 @@ function FeedSection(props) {
           src="/images/ohgyukwon/bookmark.png"
           alt=""
         />
-      </div>
+      </section>
       <p className="likeCountSection">
         <span id="likeResult">{FeedLikeCount}</span> 명이 좋아합니다
       </p>
 
       {/* Feed Content mockData */}
-      <div className="feedContents">{props.feedCommend}</div>
+      <section className="feedContents">{props.feedCommend}</section>
       <p className="countTime">50분전</p>
       <Comment commentHolder="댓글입력" style={CommentBoxDisplay} />
     </article>
