@@ -1,4 +1,4 @@
-const ASIDE_LIST = [
+export const ASIDE_LIST = [
   { id: 1, asideMenu: '소개' },
   { id: 2, asideMenu: '도움말' },
   { id: 3, asideMenu: '홍보 센터' },
@@ -11,5 +11,3 @@ const ASIDE_LIST = [
   { id: 10, asideMenu: '해시태그' },
   { id: 11, asideMenu: '언어' },
 ];
-
-export default ASIDE_LIST;
