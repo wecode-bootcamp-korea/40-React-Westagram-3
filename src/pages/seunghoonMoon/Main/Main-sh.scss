@@ -63,13 +63,6 @@ body {
 //   height: 20px;
 
 /* main */
-.main_box {
-  display: flex;
-  width: 1000px;
-  height: 900px;
-  // background-color: aqua;
-  margin: auto;
-}
 // .main_comment {
 //   width: 500px;
 //   height: 100%;
@@ -80,6 +73,8 @@ body {
 .main_box {
   display: flex;
   justify-content: center;
+  width: 1000px;
+
   .main_profile {
     display: flex;
     justify-content: space-between;
@@ -109,7 +104,7 @@ body {
 
 /* section */
 .feed_section {
-  height: 100%;
+  height: auto;
   // background-color: brown;
   display: felx;
   border: 1px solid black;
@@ -173,7 +168,7 @@ body {
 }
 .reply_comment {
   width: 90%;
-  margin-top: 27%;
+  // margin-top: 27%;
   button {
     width: 100%;
   }

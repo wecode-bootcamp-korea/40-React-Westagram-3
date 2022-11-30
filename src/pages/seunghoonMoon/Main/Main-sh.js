@@ -4,6 +4,7 @@ import Comment from '../Comment';
 
 // const Main = () => {
 // return <h1> 3팀 문승훈 메인 페이지입니다 </h1>;
+let nextId = 0;
 
 function Main() {
   // let [userName] = useState('hacker');
@@ -18,6 +19,8 @@ function Main() {
     setFeedComments(copyFeedComments);
     setComment('');
   };
+
+  console.log(feedComments);
   return (
     <>
       {/* <div className="nav_box">
@@ -86,34 +89,58 @@ function Main() {
                   <span> cool ~</span>
                 </li>
               </ul>
-              <ul className=""></ul>
+              <ul className="" />
             </div>
           </div>
           <Comment feedComments={feedComments} />
+          <ul>
+            {feedComments.map((feedComments, index) => {
+              return (
+                <li key={index}>
+                  <span>204.sh</span>
+                  {feedComments.comment}
+                </li>
+              );
+              // <li key={feedComments.id}>{feedComments.comment}</li>
+            })}
+          </ul>
           <input
             className="reply_comment"
             type="text"
             placeholder="댓글 달기..."
-            // onChange={e => {
-            //   setComment(e.target.value);
-            // }}
+            onChange={e => {
+              setComment(e.target.value);
+            }}
             onKeyUp={e => {
               e.target.value.length > 0 ? setIsValid(true) : setIsValid(false);
             }}
             value={comment}
           />
           <button
-            type="button"
-            className={
-              comment.length > 0
-                ? 'submitCommentActive'
-                : 'submitCommentInactive'
-            }
-            onClick={post}
-            disabled={isValid ? false : true}
+            onClick={() => {
+              setComment('');
+              setFeedComments([
+                ...feedComments,
+                { id: nextId++, comment: comment },
+              ]);
+            }}
+            // type="button"
+            // className={
+            //   comment.length > 0
+            //     ? 'submitCommentActive'
+            //     : 'submitCommentInactive'
+            // }
+            // onClick={post}
+            // disabled={isValid ? false : true}
           >
             게시
           </button>
+          {/* <ul>
+            {feedComments.map((feedComments, index) => {
+              return <li key={index}>{feedComments.comment}</li>;
+              // <li key={feedComments.id}>{feedComments.comment}</li>
+            })}
+          </ul> */}
         </div>
         {/* <div className="main_comment"></div> */}
         <div className="right_box">
