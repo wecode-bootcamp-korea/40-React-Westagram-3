@@ -1,73 +1,29 @@
 @import '../../../styles/mixin.scss';
 @import '../../../styles/variable.scss';
 
-.wrapperMain {
-  @include flex;
-  flex-direction: column;
-}
-
-.wrapperNav {
-  display: none;
-  height: 70px;
-  line-height: 70px;
-  border-bottom: $border;
-
-  .innerNav {
-    @include alignFit;
-    @include align;
-    width: 60%;
-    margin: 0 auto;
-
-    .logoBox {
-      @include flex;
-      @include align;
-    }
-
-    .westagramTitle,
-    .logoDivSlash {
-      margin-left: 30px;
-      font-size: 22px;
-    }
-
-    .westagramLogo,
-    .iconBox img,
-    .wrapperState img {
-      @include imageSizeSmall;
-    }
-
-    .search {
-      width: 200px;
-      padding: 5px 5px;
-      background-color: $backgroundColor;
-      border: $border;
-      font-size: 12px;
-      text-align: center;
-    }
-
-    .iconBox {
-      @include flex;
-      width: 200px;
-      justify-content: space-around;
-    }
-  }
-}
-
-.wrapperFeeds {
+.Main {
   @include alignFit;
   background-color: $backgroundColor;
 }
 
-.feeds {
+.alignFeeds {
   @include alignFit;
   width: 60%;
-  margin: 40px auto;
-  padding: 0px 20px;
+  margin: 30px auto;
+}
+
+.wrapperFeeds {
+  @include alignFit;
+  width: 60%;
+}
+
+.feeds {
+  width: 100%;
+  background-color: white;
 }
 
 .feedsLeft {
-  width: 55%;
-  margin-right: 10px;
-  background-color: white;
+  margin-bottom: 20px;
   border: $border;
 }
 
@@ -102,9 +58,15 @@
 }
 
 .contents {
+  width: 100%;
   height: 500px;
-  background: url(../../../assets/hyeseonSeo/Main/camping1.jpg) no-repeat 50%;
-  background-size: cover;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .stateBox {
@@ -162,7 +124,7 @@
 }
 
 .commentsSample {
-  padding: 10px 15px;
+  padding: 10px 0px;
 
   .createComments {
     @include alignFit;
@@ -209,7 +171,8 @@
 }
 
 .mainRight {
-  width: 42%;
+  margin-left: 20px;
+  width: 48%;
 }
 
 .profileBox {
@@ -231,6 +194,10 @@
   li:nth-child(2) {
     @include profileFontStyle_location;
   }
+}
+
+.rightBox {
+  @include alignFit;
 }
 
 .rightBoxRecommend {

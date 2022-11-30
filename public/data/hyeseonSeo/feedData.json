@@ -1,0 +1,92 @@
+[
+  {
+    "profile": "./images/hyeseonSeo/camping2.jpg",
+    "userId": "wecode_hyeseon",
+    "location": "선릉 Seonlleung",
+    "contents": "./images/hyeseonSeo/camping4.jpg",
+    "likePeople": 35,
+    "feedComments": "sunrise lucy droplet masquerade lucid you droplet lucy droplet miracle melody ",
+    "sampleComments": "Placeat eligendi nequex"
+  },
+  {
+    "profile": "./images/hyeseonSeo/camping3.jpg",
+    "userId": "wecode_hyeseon",
+    "location": "역삼 Yeoksam ",
+    "contents": "./images/hyeseonSeo/camping3.jpg",
+    "likePeople": 29,
+    "feedComments": "masquerade haze flora blush flutter miracle melody iris lucy droplet miracle melody",
+    "sampleComments": "Placeat eligendi nequex"
+  },
+  {
+    "profile": "./images/hyeseonSeo/camping2.jpg",
+    "userId": "wecode_hyeseon",
+    "location": "강남 Gangnam",
+    "contents": "./images/hyeseonSeo/camping5.jpg",
+    "likePeople": 47,
+    "feedComments": "sdroplet masquerade flora blush flutter miracle melody irismiracle melody flora blush ",
+    "sampleComments": "Placeat eligendi nequex"
+  },
+  {
+    "profile": "./images/hyeseonSeo/camping1.jpg",
+    "userId": "wecode_hyeseon",
+    "location": "교대 Gyodae",
+    "contents": "./images/hyeseonSeo/camping6.jpg",
+    "likePeople": 47,
+    "feedComments": "sdroplet masquerade flora blush flutter miracle melody irismiracle melody flora blush ",
+    "sampleComments": "Placeat eligendi nequex"
+  },
+  {
+    "profile": "./images/hyeseonSeo/camping4.jpg",
+    "userId": "wecode_hyeseon",
+    "location": "서초 Seocho",
+    "contents": "./images/hyeseonSeo/camping2.jpg",
+    "likePeople": 47,
+    "feedComments": "sdroplet masquerade flora blush flutter miracle melody irismiracle melody flora blush ",
+    "sampleComments": "Placeat eligendi nequex"
+  },
+  {
+    "profile": "./images/hyeseonSeo/camping2.jpg",
+    "userId": "wecode_hyeseon",
+    "location": "방배 Bangbae",
+    "contents": "./images/hyeseonSeo/camping4.jpg",
+    "likePeople": 35,
+    "feedComments": "sunrise lucy droplet masquerade lucid you droplet lucy droplet miracle melody ",
+    "sampleComments": "Placeat eligendi nequex"
+  },
+  {
+    "profile": "./images/hyeseonSeo/camping3.jpg",
+    "userId": "wecode_hyeseon",
+    "location": "사당 Sadang",
+    "contents": "./images/hyeseonSeo/camping3.jpg",
+    "likePeople": 29,
+    "feedComments": "masquerade haze flora blush flutter miracle melody iris lucy droplet miracle melody",
+    "sampleComments": "Placeat eligendi nequex"
+  },
+  {
+    "profile": "./images/hyeseonSeo/camping2.jpg",
+    "userId": "wecode_hyeseon",
+    "location": "낙성대 Nakseongdae",
+    "contents": "./images/hyeseonSeo/camping5.jpg",
+    "likePeople": 47,
+    "feedComments": "sdroplet masquerade flora blush flutter miracle melody irismiracle melody flora blush ",
+    "sampleComments": "Placeat eligendi nequex"
+  },
+  {
+    "profile": "./images/hyeseonSeo/camping1.jpg",
+    "userId": "wecode_hyeseon",
+    "location": "서울대입구 Seoul National University ",
+    "contents": "./images/hyeseonSeo/camping6.jpg",
+    "likePeople": 47,
+    "feedComments": "sdroplet masquerade flora blush flutter miracle melody irismiracle melody flora blush ",
+    "sampleComments": "Placeat eligendi nequex"
+  },
+  {
+    "profile": "./images/hyeseonSeo/camping4.jpg",
+    "userId": "wecode_hyeseon",
+    "location": "봉천 Bongcheon",
+    "contents": "./images/hyeseonSeo/camping2.jpg",
+    "likePeople": 47,
+    "feedComments": "sdroplet masquerade flora blush flutter miracle melody irismiracle melody flora blush ",
+    "sampleComments": "Placeat eligendi nequex"
+  }
+]
