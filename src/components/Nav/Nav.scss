@@ -2,9 +2,11 @@
 
 .nav {
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
   height: 70px;
   @include navDisplay;
+  background-color: white;
+  border-bottom: 2px solid #f0f0f0;
 }
 
 .navBox {
@@ -22,6 +24,7 @@
 }
 
 .navIcons {
+  position: relative;
   width: 120px;
   display: flex;
   justify-content: space-between;
@@ -35,11 +38,67 @@
   @include navImageSmall;
 }
 
+.dropDown {
+  position: absolute;
+  top: 45px;
+  right: -45px;
+}
+.dropDownUl {
+  position: relative;
+  width: 200px;
+  padding: 10px;
+  background: white;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 7px;
+  box-shadow: 2px 2px 2px rgb(199, 199, 199);
+}
+
+.dropDownUl:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 0 15px 15px;
+  border-color: white transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  top: -15px;
+  left: 128px;
+}
+
+.searchDiv {
+  position: relative;
+}
+.searchResultcss {
+  display: flex;
+  align-items: center;
+}
+.searchResult {
+  position: absolute;
+  border: 2px solid #f0f0f0;
+  background-color: #fafafa;
+  width: 100%;
+}
+
+.dropDownLi {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  padding-top: 10px;
+}
 .logoTitle {
   font-size: 22px;
 }
 
 .navInput {
+  position: relative;
   text-align: center;
   padding: 3px 5px;
+}
+
+@media (max-width: 530px) {
+  .searchResult {
+    display: none;
+  }
 }
