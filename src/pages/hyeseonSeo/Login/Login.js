@@ -38,21 +38,21 @@ const Login = () => {
             className={isPassed ? 'loginBtnActive' : 'loginBtn'}
             onClick={e => {
               navigate('/main-hs');
-              // e.preventDefault();
-              //   fetch('http://10.58.52.93:3000/user/signin', {
-              //     method: 'POST',
-              //     headers: {
-              //       'Content-Type': 'application/json;charset=utf-8',
-              //     },
-              //     body: JSON.stringify({
-              //       // name: '7조',
-              //       // profileImage: './images/hyeseonSeo/camping.jpg',
-              //       email: 'gptjs@gmail.com',
-              //       password: 'password',
-              //     }),
-              //   })
-              //     .then(res => res.json())
-              //     .then(data => console.log(data));
+              e.preventDefault();
+              fetch('http://10.58.52.93:3000/user/signin', {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json;charset=utf-8',
+                },
+                body: JSON.stringify({
+                  // name: '7조',
+                  // profileImage: './images/hyeseonSeo/camping.jpg',
+                  email: 'gptjs@gmail.com',
+                  password: 'password',
+                }),
+              })
+                .then(res => res.json())
+                .then(data => console.log(data));
             }}
             disabled={!isPassed}
           >
