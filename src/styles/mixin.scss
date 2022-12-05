@@ -3,8 +3,75 @@
   height: 25px;
 }
 
+@mixin ImageMini() {
+  width: 20px;
+  height: 20px;
+}
+
 @mixin navDisplay() {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+@mixin loginSet() {
+  width: 250px;
+  padding: 12px 0px 10px 12px;
+  margin-bottom: 10px;
+  background-color: $backgroundColor;
+}
+
+@mixin flex() {
+  display: flex;
+}
+
+@mixin align() {
+  align-items: center;
+}
+
+@mixin flexColumn($direction) {
+  display: flex;
+  flex-direction: $direction;
+}
+
+@mixin alignFit() {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin imageSizeSmall() {
+  width: 25px;
+  height: 25px;
+}
+
+@mixin imageSizeMedium() {
+  width: 30px;
+  height: 30px;
+}
+
+@mixin imageSizeBig() {
+  width: 40px;
+  height: 40px;
+}
+
+@mixin profileFontStyle() {
+  font-size: 16px;
+  font-weight: 900;
+}
+
+@mixin profileFontStyle_location() {
+  font-size: 12px;
+  margin-top: 3px;
+  color: #555;
+}
+
+@mixin btnStyle {
+  margin-top: 10px;
+  color: white;
+  background-color: $btnColor;
+  border: {
+    style: none;
+    radius: $radius;
+  }
+  font-weight: 600;
 }
